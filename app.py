@@ -160,6 +160,168 @@ class MockGraniteModel:
                 return """Persistent headache, fatigue, and mild fever can be symptoms of various conditions, from viral infections to more serious issues. 
                 It's crucial to consult a doctor for a proper diagnosis. They might recommend further tests to determine the underlying cause and the best course of action. 
                 Remember, this AI provides general information and cannot diagnose."""
+            elif "fever" in query:
+                return """Fever is a temporary rise in body temperature, often due to an illness. It’s a symptom — not a disease — and is usually a sign that your body is fighting an infection.
+
+                🌡️ Normal vs. Fever
+                Normal body temp: ~98.6°F (37°C)
+
+                Fever: Usually defined as:
+
+                Low-grade: 99.5°F to 100.9°F (37.5–38.3°C)
+
+                Moderate: 101°F to 103°F (38.3–39.4°C)
+
+                High: 104°F or more (≥ 40°C)
+
+                🩺 Common Causes of Fever
+                Viral infections (cold, flu, COVID-19)
+
+                Bacterial infections (UTI, strep throat)
+
+                Heat exhaustion
+
+                Inflammatory conditions (e.g. rheumatoid arthritis)
+
+                Vaccinations (as a side effect)
+
+                🏠 Home Care Tips
+                Rest: Let your body recover.
+
+                Hydrate: Drink plenty of fluids (water, electrolyte drinks, soups).
+
+                Dress lightly: Avoid heavy clothing or blankets.
+
+                Cool compress: Use a damp washcloth on forehead/neck.
+
+                Medications:
+
+                Paracetamol (acetaminophen) or Ibuprofen can reduce fever.
+
+                🚨 When to See a Doctor
+                Fever > 103°F (39.4°C)
+
+                Lasts more than 3 days
+
+                Severe headache, rash, stiff neck
+
+                Difficulty breathing or chest pain
+
+                Fever with confusion, seizures, or persistent vomiting
+
+                For infants under 3 months, a fever is always an emergency"""
+            elif "cough" in query:
+                return """🩺 Common Causes
+                Viral infections (cold, flu, COVID-19)
+
+                Bacterial infections (bronchitis, pneumonia)
+
+                Allergies or asthma
+
+                Acid reflux (GERD)
+
+                Postnasal drip
+
+                Environmental irritants (smoke, pollution)
+
+                🏠 Home Remedies
+                Warm fluids: Ginger tea, warm water with honey and lemon
+
+                Steam inhalation: Helps loosen mucus
+
+                Honey (for >1 yr old): Soothes throat and suppresses cough
+
+                Saltwater gargle: Relieves throat irritation
+
+                Avoid irritants: Smoke, perfumes, and dust
+
+                💊 Medications
+                Dry Cough:
+
+                Dextromethorphan (cough suppressants)
+
+                Antihistamines (if allergy-related)
+
+                Wet Cough:
+
+                Expectorants like guaifenesin to thin mucus
+
+                Antibiotics if it's bacterial (only with a prescription)
+
+                """
+            elif "cold" in query:
+                return """🤧 Common Symptoms
+                Runny or stuffy nose
+
+                Sneezing
+
+                Sore throat
+
+                Cough
+
+                Mild fever (sometimes)
+
+                Fatigue
+
+                Headache
+
+                Watery eyes
+                🏠 Home Remedies
+                Rest: Let your immune system work
+
+                Hydration: Warm water, soup, herbal teas
+
+                Steam inhalation: Helps with congestion
+
+                Saltwater gargle: Soothes sore throat
+
+                Honey + lemon: Eases throat and cough
+
+                Tulsi, ginger, turmeric milk: Natural anti-inflammatory options
+
+                💊 Over-the-Counter Medicines
+                Symptom	Medicine Example
+                Runny nose	Antihistamines (cetirizine, loratadine)
+                Nasal congestion	Decongestants (phenylephrine, xylometazoline)
+                Cough	Dextromethorphan, guaifenesin
+                Fever/body ache	Paracetamol, ibuprofen
+
+                ⚠️ Avoid antibiotics — they do not work against viruses."""
+            elif "cold" in query and "fever" in query:
+                return """🏠 Home Remedies
+                ✅ Works for both cold & cough relief:
+
+                Ginger tea with honey
+
+                Tulsi + turmeric + pepper concoction
+
+                Steam inhalation (add Vicks or eucalyptus oil)
+
+                Honey + lemon in warm water (especially for dry cough)
+
+                Saltwater gargle (for throat relief)
+
+                Stay hydrated: warm water, soups, ORS
+
+                Rest: allow your body to heal
+
+                💊 Medicines (OTC)
+                Symptom	Medicine Type	Examples
+                Fever, body ache	Pain relievers	Paracetamol, Ibuprofen
+                Runny nose	Antihistamines	Cetirizine, Loratadine
+                Blocked nose	Decongestants	Xylometazoline nasal spray
+                Dry cough	Cough suppressants	Dextromethorphan
+                Wet cough	Expectorants	Guaifenesin
+
+                🔹 Use syrups like Benadryl, Ascoril, or Grilinctus (as per need).
+                🔹 Always consult a doctor if symptoms last >7 days or worsen.
+
+                🍲 Diet Suggestions
+                Warm liquids: soup, tea, turmeric milk
+
+                Soft foods: khichdi, dal, porridge
+
+                Avoid cold drinks, ice cream, fried and spicy foods"""
             elif "feeling headache" in query or "headache" in query: # Added specific response for headache
                 return """
                 **Quick Relief Tips for Headaches:**
